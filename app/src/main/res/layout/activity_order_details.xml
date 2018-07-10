@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trying.developing.owner.ui.OrderDetailsActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/address_details_id"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/details_detail_id"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"
+        android:layout_below="@+id/address_details_id"
+        android:layout_marginTop="5sp"
+        />
+
+
+    <RadioGroup
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:id="@+id/radioGroup"
+        >
+
+        <RadioButton
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:text="pending"
+            android:id="@+id/selectLeaderTypeRadioButtonId"
+            android:checked="true"
+            android:textSize="15dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="confirmed"
+            android:id="@+id/selectMemberTypeRadioButtonId"
+            android:checked="false"
+            android:textSize="15dp"
+
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:text="Response"
+        android:onClick="response"
+        />
+
+</RelativeLayout>
